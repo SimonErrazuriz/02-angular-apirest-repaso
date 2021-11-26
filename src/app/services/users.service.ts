@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../models/user';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
-url_api = 'https://reqres.in/api/users';
+url_api = 'https://jsonplaceholder.typicode.com/users';
 
   constructor(public _http: HttpClient) { }
 
